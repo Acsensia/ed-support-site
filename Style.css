@@ -1,0 +1,300 @@
+html {
+    font-family: "consolas";
+}
+div {
+    border: 4px;
+    border-radius: 5px;
+    display: flex;
+}
+header > div, footer > div {
+    height: 50px;
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+    justify-content: left;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px #C0C0C0;
+    clip-path: inset(0 -10px 0 -10px);
+    user-select: none;
+}
+footer > div {
+    justify-content: space-evenly;
+}
+footer > div > h2 {
+    margin: 10px 0;
+}
+header > div > img, footer > div > a > img {
+    height: 50px;
+    width: auto;
+    transition: all 300ms;
+}
+footer > div > a > img:hover {
+    transform: scale(1.025);
+}
+header > div > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 13px;
+    height: 35px;
+}
+header > div > a:visited {
+    color: #000000;
+}
+header > div > a:active {
+    background: #A0A0A0;
+    color: #000000;
+}
+header > div > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background: #C0C0C0;
+    cursor: pointer;
+}
+header > div > div {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(209,122,15,1) 100%);
+    height: 50px;
+    flex-grow: 1;
+}
+body { 
+    margin: 0;
+    background: #E0E0E0;
+    background-image: url(imgcut/tile2.png);
+}
+body > div {
+    width: 1200px;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 10px #A0A0A0;
+    clip-path: inset(0px -10px 0px -10px);
+}
+body > div > div {
+    height: 500px;
+    background: #ffffff;
+    justify-content: right;
+    color: #000000;
+}
+body > div > div:nth-of-type(odd):not(.pagi), .card-card:not(.pagi){
+    background: #000000;
+    color: #ffffff;
+}
+body > div > div:nth-of-type(odd) > img, .card-card > img {
+    border: 4px;
+    border-radius: 0 5px 5px 0;
+}
+body > div > div > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 6px;
+    align-self: center;
+}
+body > div > div > img {
+    border: 4px;
+    border-radius: 5px 0 0 5px;
+}
+.smallerdiv {
+    height: 380px;
+    padding: 4px;
+}
+.smaller-smallerdiv {
+    height: 270px;
+    padding: 4px;
+}
+h1, h2, h3, h4 {
+    color: inherit;
+    margin: 10px auto;
+    font-weight: bold;
+}
+h1 {
+    margin: auto;
+}
+h3 {
+    margin: 5px auto;
+}
+ul {
+    list-style-type: circle;
+    color: inherit;
+}
+
+
+
+.divimg, .divimg-smaller {
+    min-width: 433px;
+    min-height: 380px;
+    background-size: 433px 375px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.divimg-smaller {
+    min-width: 215px;
+    min-height: 190px;
+    background-size: 215px 185px;
+}
+#slideshow-container > div {
+    position: relative;
+}
+#slideshow-container > div > img {
+    display: none;
+    position: relative;
+}
+#slideshow-container > #ignore-slideshow > img {
+    display: inline-block;
+}
+.column-container {
+    display: flex;
+    flex-direction: column;
+    height: 633px;
+}
+#slideshow-container > div > a {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-right: 312px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#slideshow-container > div:nth-of-type(odd) > a {
+    margin-right: 0;
+    margin-left: 312px;
+}
+#slideshow-container > div > a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+#slideshow-container > div > a:nth-of-type(1) {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+#card-div {
+    height: 50px;
+    border: 4px;
+}
+#card-div > h4 {
+    margin: auto;
+    border-width: 0 2px;
+    padding: 0 8px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 300ms;
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+}
+#card-div > h4:hover, .active, input[type="submit"]:hover {
+    background-color: #202020;
+    border-color: rgb(100,100,100);
+    transform: scale(1.005);
+}
+.card-card {
+    display: none;
+}
+
+
+
+#form-container {
+    background-color: #ffffff;
+    color: #000000;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column;
+    font-size: 24px;
+    height: 500px;
+    width: auto;
+    background-color: #ffffff;
+}
+form * {
+    color: black;
+    margin: 4px 6px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffffff #ababab #ababab #ffffff;
+    font-size: 24px;
+    resize: none;
+}
+form > h2 {
+    align-self: center;
+    font-size: 34px;
+}
+textarea {
+    border-color: #ababab;
+}
+textarea:focus {
+    outline: none;
+    border-color: #575757;
+}
+input:focus {
+    outline: none;
+    border-color: #ababab #575757 #575757 #ababab;
+}
+input[type="submit"] {
+    border-width: 0 2px;
+    border-color: #ababab;
+    border-radius: 0;
+    transition: all 300ms;
+}
+input[type="submit"]:hover {
+    background-color: #C0C0C0;
+    cursor: pointer;
+}
+.invalid, .invalid:focus {
+    border-color: #ff0000 #ab0000 #ab0000 #ff0000;
+}
+textarea.invalid, textarea.invalid:focus {
+    border-color: #ab0000;
+}
+
+.pagi{
+    background-color: white;
+    height: auto;
+    justify-content: center;
+}
+.pagi > a{
+    margin: 0px 5px;
+    padding: 5px;
+    background-color: #C0C0C0;
+    border: 2px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    width: auto;
+    transition: all 300ms;
+}
+.pagi > select{
+    height: auto;
+}
+.pagi > a:hover{
+    transform: scale(1.025);
+}
+table, th, td {
+    border: 1px solid black;
+    font-size: 23px;
+    padding: 5px;
+}
+.pagi > a.active{
+    background-color: darkorange;
+}
+
+
+header > div > input {
+    width: 430px;
+    /*width: auto;*/
+    height: 30px;
+}

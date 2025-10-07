@@ -1,0 +1,189 @@
+html {
+    font-family: "consolas", serif;
+}
+div {
+    border: 4px;
+    border-radius: 5px;
+    display: flex;
+}
+header > div, footer > div {
+    height: 50px;
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+    justify-content: left;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px #C0C0C0;
+    clip-path: inset(0 -10px 0 -10px);
+    user-select: none;
+    display: flex;
+}
+header > div > input {
+    width: 430px;
+    height: 30px;
+}
+footer > div {
+    justify-content: space-evenly;
+}
+footer > div > h2 {
+    margin: 10px 0;
+}
+header > div > img, footer > div > a > img {
+    height: 50px;
+    width: auto;
+    transition: all 300ms;
+}
+footer > div > a > img:hover {
+    transform: scale(1.025);
+}
+header > div > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 13px;
+    height: 35px;
+}
+header > div > a:visited {
+    color: #000000;
+}
+header > div > a:active {
+    background: #A0A0A0;
+    color: #000000;
+}
+header > div > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background: #C0C0C0;
+    cursor: pointer;
+}
+.gradient {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(209,122,15,1) 100%);
+    height: 50px;
+    flex-grow: 1;
+}
+body {
+    margin: 0;
+    background: #E0E0E0 url(imgcut/tile2.png);
+}
+body > div {
+    width: 1200px;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 10px #A0A0A0;
+    clip-path: inset(0px -10px 0px -10px);
+}
+
+
+.pagination {
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    height: 30px;
+    width: 100%;
+    background-color: #A0A0A0;
+    justify-content: center;
+}
+.pagination > select{
+    margin-right: 20px;
+}
+#results{
+    border-radius: 0 0 5px 5px;
+    font-size: 11px;
+    height: auto;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 135px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#results a{
+    color: white;
+    text-decoration: none;
+}
+.singularResult h2, .singularResult h3{
+    font-size: 14px;
+    margin: 0;
+    padding: 3px 5px;
+    text-align: center;
+}
+.signPicture > h2, .section > h2{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.signPicture > h2:hover{
+    background-color: #A0A0A0;
+    cursor: pointer;
+}
+.singularResult{
+    border: 5px solid #1a1a1a;
+    border-radius: inherit;
+    background: #1a1a1a;
+    color: white;
+    width: 450px;
+    height: 180px;
+}
+.section{
+    flex-direction: column;
+    width: 100%;
+}
+.section > div > div, .section > div > h3{
+    width: 50%;
+}
+.section > div > div{
+    font-size: 11px;
+    background: #2b2b2b;
+    width: 60%;
+    padding: 3px 5px;
+    /*no round borders for now*/
+    border: 0;
+    border-radius: 0;
+}
+.section > div > h3{
+    font-size: 12px;
+    width: 40%;
+    text-align: right;
+}
+.section > div {
+    flex-direction: row;
+}
+.signPicture{
+    width: 100%;
+    flex-direction: column;
+}
+.signPicture > img{
+    width: 100%;
+    height: auto;
+    max-height: 152px;
+}
+
+
+#paginationButtons{
+    border-radius: 0 0 0 0;
+    width: 100%;
+    background: #A0A0A0;
+    height: 30px;
+    justify-content: center;
+}
+#paginationButtons > a{
+    margin: 0px 5px;
+    padding: 0px 8px;
+    background-color: #C0C0C0;
+    border: 2px;
+    border-radius: 5px;
+    font-size: 25px;
+    width: auto;
+    transition: all 300ms;
+}
+#paginationButtons > select{
+    height: auto;
+}
+#paginationButtons > a:hover:not(.active){
+    transform: scale(1.025);
+    cursor: pointer;
+    background-color: #575757;
+}
+#paginationButtons > a.active{
+    background-color: darkorange;
+}
